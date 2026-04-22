@@ -48,23 +48,24 @@ gsap.utils.toArray('.tl-item').forEach(el => {
 document.querySelectorAll('.tl-item').forEach(item => {
   const dot = item.querySelector('.tl-dot')
   dot.dataset.num = dot.textContent
+
+  const swap = (toCheck) => {
+    gsap.killTweensOf(dot)
+    gsap.to(dot, {
+      scale: 0, duration: 0.18, ease: 'back.in(1.5)',
+      onComplete() {
+        dot.textContent = toCheck ? '✓' : dot.dataset.num
+        toCheck ? dot.classList.add('done') : dot.classList.remove('done')
+        gsap.to(dot, { scale: 1, duration: 0.28, ease: 'back.out(2.5)' })
+      }
+    })
+  }
+
   ScrollTrigger.create({
     trigger: item,
-    start: 'top 35%',
-    onEnter() {
-      gsap.to(dot, { opacity: 0, duration: 0.15, ease: 'none', onComplete() {
-        dot.textContent = '✓'
-        dot.classList.add('done')
-        gsap.to(dot, { opacity: 1, duration: 0.2 })
-      }})
-    },
-    onLeaveBack() {
-      gsap.to(dot, { opacity: 0, duration: 0.15, ease: 'none', onComplete() {
-        dot.textContent = dot.dataset.num
-        dot.classList.remove('done')
-        gsap.to(dot, { opacity: 1, duration: 0.2 })
-      }})
-    },
+    start: 'top 40%',
+    onEnter:     () => swap(true),
+    onLeaveBack: () => swap(false),
   })
 })
 

@@ -99,7 +99,7 @@ nav.scrolled { background: rgba(248,248,245,.95); backdrop-filter: blur(12px); b
 .timeline { margin-top: 64px; position: relative; }
 .timeline::before { content: ''; position: absolute; left: 27px; top: 0; bottom: 0; width: .5px; background: var(--border); }
 .tl-item { display: flex; gap: 48px; padding-bottom: 60px; }
-.tl-dot { width: 54px; height: 54px; border-radius: 50%; border: .5px solid var(--border); background: #f0f0ec; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: 'DM Serif Display',serif; font-size: 18px; color: var(--black); position: relative; z-index: 1; transition: background .3s, border-color .3s, color .3s; }
+.tl-dot { width: 54px; height: 54px; border-radius: 50%; border: .5px solid var(--border); background: #f0f0ec; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: 'DM Serif Display',serif; font-size: 18px; color: var(--black); position: relative; z-index: 1; transition: background .25s, border-color .25s, color .25s; transform-origin: center center; }
 .tl-item:hover .tl-dot { background: var(--blue); border-color: var(--blue); color: white; }
 .tl-dot.done { background: var(--blue); border-color: var(--blue); color: white; }
 .tl-content { padding-top: 12px; }
@@ -127,6 +127,27 @@ nav.scrolled { background: rgba(248,248,245,.95); backdrop-filter: blur(12px); b
 .svc-item.open .svc-tog svg { stroke: white; }
 .svc-body { overflow: hidden; }
 .svc-body-inner { padding-bottom: 36px; padding-left: 52px; font-size: 15px; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,.35); max-width: 560px; }
+
+/* CASE STUDIES */
+.cs-section { background: var(--white); }
+.cs-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; background: var(--border); border: .5px solid var(--border); margin-top: 64px; }
+.cs-card { background: var(--white); padding: 48px 40px; display: flex; flex-direction: column; gap: 20px; transition: background .3s; }
+.cs-card:hover { background: #f0f0ec; }
+.cs-tag { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); }
+.cs-metric { display: flex; align-items: baseline; gap: 10px; }
+.cs-before { font-family: 'DM Serif Display',serif; font-size: clamp(20px,2vw,28px); color: rgba(0,0,0,.25); text-decoration: line-through; text-decoration-color: rgba(0,0,0,.15); }
+.cs-arrow { font-size: 18px; color: var(--blue); }
+.cs-after { font-family: 'DM Serif Display',serif; font-size: clamp(28px,3.5vw,48px); color: var(--black); letter-spacing: -.02em; line-height: 1; }
+.cs-title { font-family: 'DM Serif Display',serif; font-size: clamp(18px,1.8vw,24px); color: var(--black); letter-spacing: -.01em; line-height: 1.2; }
+.cs-body { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--grey); margin: 0; flex: 1; }
+
+/* TOOLS */
+.tools-section { padding: 60px 48px; border-top: .5px solid var(--border); border-bottom: .5px solid var(--border); text-align: center; }
+.tools-label { font-size: 12px; font-weight: 400; letter-spacing: .06em; color: rgba(0,0,0,.35); margin-bottom: 36px; }
+.tools-grid { display: flex; align-items: center; justify-content: center; gap: 56px; flex-wrap: wrap; }
+.tool-item { display: flex; align-items: center; gap: 9px; transition: opacity .2s; }
+.tool-item:hover { opacity: 0.75; }
+.tool-item span { font-size: 15px; font-weight: 500; letter-spacing: .01em; color: var(--black); }
 
 /* CTA */
 .cta-section { background: var(--white); padding: 180px 48px; text-align: center; position: relative; overflow: hidden; }
