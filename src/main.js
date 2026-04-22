@@ -36,11 +36,35 @@ gsap.utils.toArray('.reveal').forEach(el => {
   })
 })
 
-// Timeline items
+// Timeline items — entrance
 gsap.utils.toArray('.tl-item').forEach(el => {
   gsap.from(el, {
     scrollTrigger: { trigger: el, start: 'top 88%', once: true },
     opacity: 0, x: -20, duration: 0.6, ease: 'power2.out',
+  })
+})
+
+// Timeline dots — swap to ✓ as each item scrolls past
+document.querySelectorAll('.tl-item').forEach(item => {
+  const dot = item.querySelector('.tl-dot')
+  dot.dataset.num = dot.textContent
+  ScrollTrigger.create({
+    trigger: item,
+    start: 'top 35%',
+    onEnter() {
+      gsap.to(dot, { opacity: 0, duration: 0.15, ease: 'none', onComplete() {
+        dot.textContent = '✓'
+        dot.classList.add('done')
+        gsap.to(dot, { opacity: 1, duration: 0.2 })
+      }})
+    },
+    onLeaveBack() {
+      gsap.to(dot, { opacity: 0, duration: 0.15, ease: 'none', onComplete() {
+        dot.textContent = dot.dataset.num
+        dot.classList.remove('done')
+        gsap.to(dot, { opacity: 1, duration: 0.2 })
+      }})
+    },
   })
 })
 

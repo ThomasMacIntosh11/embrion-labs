@@ -101,9 +101,10 @@ nav.scrolled { background: rgba(248,248,245,.95); backdrop-filter: blur(12px); b
 .tl-item { display: flex; gap: 48px; padding-bottom: 60px; }
 .tl-dot { width: 54px; height: 54px; border-radius: 50%; border: .5px solid var(--border); background: #f0f0ec; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: 'DM Serif Display',serif; font-size: 18px; color: var(--black); position: relative; z-index: 1; transition: background .3s, border-color .3s, color .3s; }
 .tl-item:hover .tl-dot { background: var(--blue); border-color: var(--blue); color: white; }
+.tl-dot.done { background: var(--blue); border-color: var(--blue); color: white; }
 .tl-content { padding-top: 12px; }
 .tl-title { font-family: 'DM Serif Display',serif; font-size: clamp(28px,3vw,42px); letter-spacing: -.02em; color: var(--black); margin-bottom: 10px; }
-.tl-body { font-size: 16px; font-weight: 300; line-height: 1.7; color: var(--grey); max-width: 800px; }
+.tl-body { font-size: 16px; font-weight: 300; line-height: 1.7; color: var(--grey); }
 .tl-tag { margin-top: 12px; font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); }
 
 /* SERVICES */
