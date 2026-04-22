@@ -150,7 +150,7 @@ nav.scrolled { background: rgba(248,248,245,.95); backdrop-filter: blur(12px); b
 .tool-item span { font-size: 15px; font-weight: 500; letter-spacing: .01em; color: var(--black); }
 
 /* CTA */
-.cta-section { background: var(--white); padding: 180px 48px; text-align: center; position: relative; overflow: hidden; }
+.cta-section { background: var(--white); padding: 100px 48px; text-align: center; position: relative; overflow: hidden; }
 .cta-ring { position: absolute; border-radius: 50%; border: .5px solid rgba(74,111,232,.12); left: 50%; top: 50%; transform: translate(-50%,-50%); animation: ringPulse 4s ease-out infinite; }
 .cta-ring:nth-child(1) { width: 240px; height: 240px; animation-delay: 0s; }
 .cta-ring:nth-child(2) { width: 440px; height: 440px; animation-delay: .8s; }
