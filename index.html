@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>embrion /labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+
+<nav id="nav">
+  <div class="logo">
+    <svg viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg">
+      <text x="4" y="62" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="52" font-weight="500" letter-spacing="-2" fill="#1a1a1a">embrion</text>
+      <text x="222" y="62" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="52" font-weight="200" fill="#4A6FE8">/</text>
+      <text x="244" y="62" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="52" font-weight="400" letter-spacing="-2" fill="#6b6b6b">labs</text>
+    </svg>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#process">Process</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Start a project</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-headline">
+      We build AI <span class="blue">faster</span><br>
+      so you deliver use cases,<br>
+      not slide decks.
+    </h1>
+  </div>
+  <div class="hero-bottom">
+    <p class="hero-sub">Most companies spend months in strategy. We put a working AI product in your hands in weeks — so you can prove value before committing to a full build.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Start a project →</a>
+      <a href="#process" class="btn-ghost">Our process <span class="arr">↓</span></a>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <svg id="proto-svg" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+</section>
+
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-line">
+    <span class="m-item filled">Prototype<span class="sb"> /</span></span>
+    <span class="m-item">Build</span>
+    <span class="m-item filled">Prove<span class="sb"> /</span></span>
+    <span class="m-item">Ship</span>
+    <span class="m-item filled">Scale<span class="sb"> /</span></span>
+    <span class="m-item">ROI</span>
+    <span class="m-item filled">Discover<span class="sb"> /</span></span>
+    <span class="m-item">Iterate</span>
+    <span class="m-item filled">Launch<span class="sb"> /</span></span>
+    <span class="m-item">Measure</span>
+    <span class="m-item filled">Grow<span class="sb"> /</span></span>
+    <span class="m-item">Prototype</span>
+    <span class="m-item filled">Build<span class="sb"> /</span></span>
+    <span class="m-item">Prove</span>
+    <span class="m-item filled">Ship<span class="sb"> /</span></span>
+    <span class="m-item">Scale</span>
+  </div>
+</div>
+
+<div class="numbers-bar">
+  <div class="num-item reveal rd1">
+    <div class="num-big" data-target="8" data-suffix="×">0<sup>×</sup></div>
+    <div class="num-label">Faster to first working prototype than a traditional agency</div>
+  </div>
+  <div class="num-item reveal rd2">
+    <div class="num-big" data-target="60" data-suffix="%">0<sup>%</sup></div>
+    <div class="num-label">Lower cost than building an in-house AI team</div>
+  </div>
+  <div class="num-item reveal rd3">
+    <div class="num-big">2<sup>wk</sup></div>
+    <div class="num-label">Average time from brief to working prototype</div>
+  </div>
+</div>
+
+<div class="logos-section">
+  <p class="logos-label">Trusted by teams at</p>
+  <div class="logos-grid">
+    <div class="logo-slot"></div>
+    <div class="logo-slot"></div>
+    <div class="logo-slot"></div>
+    <div class="logo-slot"></div>
+    <div class="logo-slot"></div>
+  </div>
+</div>
+
+<section class="section tl-section" id="process">
+  <div class="s-label reveal">The process</div>
+  <h2 class="s-title reveal rd1">Week by week, <em>start to finish.</em></h2>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot">1</div>
+      <div class="tl-content">
+        <div class="tl-title">Discovery &amp; scoping</div>
+        <p class="tl-body">We align on the problem, define success metrics, and select the right AI approach. You get a clear spec doc by end of week one.</p>
+        <div class="tl-tag">Week 1</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">2</div>
+      <div class="tl-content">
+        <div class="tl-title">Core build</div>
+        <p class="tl-body">We build the working prototype — model integration, UI, data pipeline. Daily updates so you're never in the dark.</p>
+        <div class="tl-tag">Weeks 2–3</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">3</div>
+      <div class="tl-content">
+        <div class="tl-title">Testing &amp; refinement</div>
+        <p class="tl-body">We test with real users, fix edge cases, and tune performance. You see the improvement in real time.</p>
+        <div class="tl-tag">Week 4</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">✓</div>
+      <div class="tl-content">
+        <div class="tl-title">Handoff &amp; roadmap</div>
+        <p class="tl-body">You receive the working prototype, full documentation, and a clear roadmap for scaling it into production if the value checks out.</p>
+        <div class="tl-tag">End of week 4</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-section" id="services">
+  <div class="s-label reveal">Use cases</div>
+  <h2 class="s-title reveal rd1">The use cases we <em>build most.</em></h2>
+  <div class="svc-list reveal rd2">
+    <div class="svc-item open">
+      <div class="svc-header">
+        <div class="svc-left"><span class="svc-num">01</span><span class="svc-name">AI Assistants &amp; Copilots</span></div>
+        <div style="display:flex;align-items:center;gap:14px;"><span class="svc-tag">Most popular</span><div class="svc-tog"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+      </div>
+      <div class="svc-body"><div class="svc-body-inner">Custom AI assistants trained on your data, integrated into your workflows. Customer support, internal knowledge bases, sales assistants — all tailored to how your team actually works.</div></div>
+    </div>
+    <div class="svc-item">
+      <div class="svc-header">
+        <div class="svc-left"><span class="svc-num">02</span><span class="svc-name">Document Intelligence</span></div>
+        <div style="display:flex;align-items:center;gap:14px;"><span class="svc-tag">High ROI</span><div class="svc-tog"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+      </div>
+      <div class="svc-body"><div class="svc-body-inner">Extract insight from contracts, reports, and forms at scale. Turn unstructured documents into structured decisions — automatically and accurately.</div></div>
+    </div>
+    <div class="svc-item">
+      <div class="svc-header">
+        <div class="svc-left"><span class="svc-num">03</span><span class="svc-name">Process Automation</span></div>
+        <div style="display:flex;align-items:center;gap:14px;"><span class="svc-tag">Quick wins</span><div class="svc-tog"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+      </div>
+      <div class="svc-body"><div class="svc-body-inner">Replace repetitive manual work with AI agents that handle complex, multi-step processes — from data entry to decision-making pipelines that run without human input.</div></div>
+    </div>
+    <div class="svc-item">
+      <div class="svc-header">
+        <div class="svc-left"><span class="svc-num">04</span><span class="svc-name">Data &amp; Search Products</span></div>
+        <div style="display:flex;align-items:center;gap:14px;"><span class="svc-tag">Enterprise ready</span><div class="svc-tog"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+      </div>
+      <div class="svc-body"><div class="svc-body-inner">Semantic search, recommendation engines, and analysis tools that surface the right information at the right moment — for your team or your customers.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="contact">
+  <div class="cta-ring"></div><div class="cta-ring"></div><div class="cta-ring"></div><div class="cta-ring"></div>
+  <div class="cta-inner">
+    <div class="cta-lbl">Ready to build?</div>
+    <h2 class="cta-title">Less planning.<br><em>More shipping.</em></h2>
+    <p class="cta-sub">Tell us your problem. We'll tell you how fast we can solve it.</p>
+    <a href="mailto:hello@embrion.ai" class="btn-white">Book a call →</a>
+  </div>
+</section>
+
+<footer>
+  <svg viewBox="0 0 280 52" width="130" xmlns="http://www.w3.org/2000/svg">
+    <text x="2" y="40" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="36" font-weight="500" letter-spacing="-1.5" fill="rgba(255,255,255,.28)">embrion</text>
+    <text x="158" y="40" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="36" font-weight="200" fill="rgba(74,111,232,.5)">/</text>
+    <text x="175" y="40" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="36" font-weight="400" letter-spacing="-1.5" fill="rgba(255,255,255,.15)">labs</text>
+  </svg>
+  <p class="footer-copy">© 2026 Embrion Labs</p>
+  <a href="mailto:hello@embrion.ai" class="footer-email">hello@embrion.ai</a>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
